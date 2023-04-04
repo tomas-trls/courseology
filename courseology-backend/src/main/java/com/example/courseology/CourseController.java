@@ -11,23 +11,23 @@ import java.util.ArrayList;
 public class CourseController {
     @Autowired
     CourseRepository courseRepository;
-    @CrossOrigin(origins="http://localhost:3000")
+
 
     // CREATE
+
     // READ
+    @CrossOrigin(origins="http://localhost:3000")
     @GetMapping("/courses")
     public ArrayList<Course> getCourses(){
         return courseRepository.getAllCourses();
     }
-
+    @CrossOrigin(origins="http://localhost:3000")
     @GetMapping("/course/{id}")
     public Course getCourseById(@PathVariable int id){
         return courseRepository.getCourseById(id);
     }
 
-
     //UPDATE
-
 
     //DELETE
 

@@ -1,12 +1,10 @@
 import React from "react";
 import Courses from "../../containers/Courses/Courses";
-import Navigation from "../../containers/Navigation/Navigation";
 
-const Home = () => {
+const Home = ({ query }) => {
   return (
     <div className="home-page">
-      <Navigation />
-      <Courses />
+      <Courses query={query} />
     </div>
   );
 };

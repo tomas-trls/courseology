@@ -1,0 +1,14 @@
+@use "../../styles/abstract/variables" as *;
+
+.navbar {
+  background-color: $color-purple;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  height: 10vh;
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+}

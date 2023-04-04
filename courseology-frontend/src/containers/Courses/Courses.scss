@@ -1,4 +1,7 @@
+@use "../../styles/abstract/variables" as *;
+
 .main {
+  background-color: $color-white;
   &__courses {
     display: flex;
     justify-content: space-evenly;
