@@ -1,11 +1,14 @@
+@use "../../styles/base/typography" as *;
 .searchBar {
   &--input {
-    height: 25px;
-    width: 200px;
+    width: 350px;
     border-radius: 50px;
     border: none;
     outline: none;
-    padding: 0 15px;
+    padding: 10px 15px;
+    font-family: $font-body;
+    font-weight: 800;
+    font-size: 1rem;
     &:focus {
       outline: none;
     }

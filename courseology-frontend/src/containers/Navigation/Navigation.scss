@@ -7,6 +7,13 @@
   justify-content: space-between;
   padding: 0 10%;
   height: 10vh;
+  &__logo {
+    object-fit: cover;
+    object-position: 50% 45%;
+    height: 100%;
+    width: 160px;
+    flex-shrink: 0;
+  }
   &__link {
     color: white;
     text-decoration: none;
